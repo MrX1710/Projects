@@ -65,9 +65,9 @@ so since our data were full of missing, duplicates and also wrong datatypes assi
 
 - Revenue over time: Monthly revenue trends upward through most of the observed window, then drops in the 2014 period. it reads as products not yet having reached expected sales(still in current state), it's not a demand collapse. This is a plausible read of the pattern.
 
-Gender and income: The customer base is close to evenly split (50.3% male / 49.7% female). Mean yearly income is almost identical between genders (Female: \$59,698.50 vs Male: \$59,731.41), and the median is exactly \$60,000 for both. grouping by education level instead shows a real gap: Bachelor's-degree holders bring in noticeably more aggregate income than other education tiers, for both genders ($591.3M total for Bachelor's-educated women vs $602.4M for men, both well above the next tier). Conclusion drawn: gender isn't a meaningful segmentation variable for income here but education level is, and a targeting product strategy built around education would be more informative than one built around gender.
+- Gender and income: The customer base is close to evenly split (50.3% male / 49.7% female). Mean yearly income is almost identical between genders (Female: \$59,698.50 vs Male: \$59,731.41), and the median is exactly \$60,000 for both. grouping by education level instead shows a real gap: Bachelor's-degree holders bring in noticeably more aggregate income than other education tiers, for both genders ($591.3M total for Bachelor's-educated women vs $602.4M for men, both well above the next tier). Conclusion drawn: gender isn't a meaningful segmentation variable for income here but education level is, and a targeting product strategy built around education would be more informative than one built around gender.
 
-Currency / territory mix: US Dollar transactions are the largest single group, followed by Australian Dollar , Canadian Dollar, UK Pound, and Deutsche Mark, consistent with the notebook's framing of Vega Global as a US-based company.
+- Currency / territory mix: US Dollar transactions are the largest single group, followed by Australian Dollar , Canadian Dollar, UK Pound, and Deutsche Mark, consistent with the notebook's framing of Vega Global as a US-based company.
 
 ## Documentation and Reproducability
 
