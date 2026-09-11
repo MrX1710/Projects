@@ -73,10 +73,17 @@ so since our data were full of missing, duplicates and also wrong datatypes assi
 
 DA -> The Folder for the project
 Products.csv               # Raw product catalog
+
 customers.json             # Raw customer data
+
 InternetSales.xlsx         # Raw internet sales transactions
+
 SalesTerritory.parquet     # Raw sales territory reference data
-ecom_retail_company.ipynb  # Cleaning + merging -> resulting into Sales.parquet ecom_retail_analysis.ipynb # takes Sales.parquet -> exploratory analysis
+
+ecom_retail_company.ipynb  # Cleaning + merging -> resulting into Sales.parquet
+
+ecom_retail_analysis.ipynb # takes Sales.parquet -> exploratory analysis
+
 requirements.txt           #packages and engines used with their versions
 
 ## Installation
