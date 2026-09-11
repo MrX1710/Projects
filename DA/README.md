@@ -102,7 +102,7 @@ pip install -r requirement.txt
 
 - No outlier detection or treatment was performed on any numeric column.
 
-- Currency amounts are not normalized. Revenue and profit are summed in ExtendedAmount/TotalProductCost as they appear per row
+- Currency amounts are not normalized
 
 - This is descriptive/exploratory only — there is no predictive model, forecast, or hypothesis test.
 
