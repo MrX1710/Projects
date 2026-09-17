@@ -1,0 +1,15 @@
+#scientific, data handling and ploting stack
+numpy
+pandas
+matplotlib
+
+# metrics
+scikit-learn          # provides sklearn.metrics (mean_squared_error, mean_absolute_error)
+
+# Time-series analysis & diagnostics
+statsmodels           # tsaplots, seasonal_decompose/STL, acorr_ljungbox, SARIMAX,
+                      # qqplot, adfuller, ac
+
+# Progress bars (notebook)
+tqdm                  # tqdm_notebook lives here
+ipywidgets            # required for tqdm_notebook to render in Jupyter
