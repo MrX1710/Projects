@@ -18,7 +18,7 @@ from datetime import datetime
 from dataclasses import dataclass, field
 from enum import Enum
 
-#i discovered that floats are dangerous in the case of Payment systems :), 0.3 + 0.1 isn't 0.4 but 0.40000000000000004 (binary float-point arithmetic operation)
+#floats are dangerous in the case of Payment systems :), 0.3 + 0.1 isn't 0.4 but 0.40000000000000004 (binary float-point arithmetic operation)
 #now this is just for a simple value as 0.3 and 0.1
 #what about millions? missing thousands of x currency
 from decimal import Decimal
