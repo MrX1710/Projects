@@ -1,6 +1,7 @@
 # Adult Income Prediction
 
 A beginner machine learning project for a kaggle competition that predicts whether a person earns **more than $50K per year** based on census data (the Adult / Census Income dataset). It is a binary classification problem.
+(this is an old project that i didn't publish back then)
 
 Everything is in one notebook: `Adult_Income.ipynb`.
 
@@ -59,8 +60,6 @@ Random Forest PR-AUC: **0.788**.
 - **CatBoost:** 1000 iterations, `learning_rate=0.05`, `depth=6`, Logloss
 
 ## Known limitations
-
-- The ensemble was used to generate a submission but was never scored on the validation set, so there is no evidence it beats CatBoost alone.
 - The scaler is fit on the full training data before the train/validation split, which leaks a small amount of validation information into preprocessing. The effect is small, but it is not the correct order.
 - No hyperparameter tuning (grid or random search) and no cross-validation. `cross_val_score` is imported but not used.
 - The decision threshold is the default 0.5. Lowering it would raise `>50K` recall at the cost of precision.
