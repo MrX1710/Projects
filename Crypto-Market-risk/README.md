@@ -20,8 +20,8 @@ This is an academic / learning project, not a production risk model.
 5. **ARCH effects**: PACF of squared residuals to pick lags, then Engle's ARCH-LM test (7 lags).
 6. **Modelling**: GARCH(1,1) and GJR-GARCH(1,1,1), both with Student-t errors, estimated on returns in percent. Compared by AIC/BIC; plain GARCH(1,1) was kept for simplicity.
 7. **Diagnostics**: ARCH-LM test on the standardized GARCH residuals.
-8. **Risk**: 1-day 95% VaR by Monte Carlo (20,000 draws of Student-t shocks, rescaled to unit variance, scaled by the last estimated conditional volatility).
-9. **Portfolio**: equal weights (25% each), GARCH(1,1)-t on the portfolio return series, residual diagnostics, 10-day variance forecast, 1-day 95% VaR.
+8. **Risk**: 1-day 99% VaR by Monte Carlo (20,000 draws of Student-t shocks, rescaled to unit variance, scaled by the last estimated conditional volatility).
+9. **Portfolio**: equal weights (25% each), GARCH(1,1)-t on the portfolio return series, residual diagnostics, 10-day variance forecast, 1-day 99% VaR.
 
 ## Key results
 
@@ -38,15 +38,15 @@ This is an academic / learning project, not a production risk model.
 
 **Residual check after GARCH(1,1)-t:** ARCH effects are removed for BNB (p = 0.92), SOL (p = 0.09) and XRP (p ≈ 1.0). They remain for BTC (p = 0.0003), meaning a (1,1) specification does not fully capture BTC's volatility dynamics.
 
-**1-day 95% Monte Carlo VaR:**
+**1-day 99% Monte Carlo VaR:**
 
-| Asset | VaR (95%) |
+| Asset | VaR (99%) |
 |-------|----------:|
-| BTC   | 2.83%     |
-| BNB   | 4.06%     |
-| XRP   | 4.64%     |
-| SOL   | 5.10%     |
-| Equal-weight portfolio | TBD |
+| BTC   | 5.32%     |
+| BNB   | 7.50%     |
+| XRP   | 9.15%     |
+| SOL   | 8.58%     |
+| Equal-weight portfolio | 9.15% |
 
 The portfolio GARCH residuals show no remaining ARCH effects (ARCH-LM p = 0.86). The 10-day variance forecast rises from about 7.5 to 9.9 (%)
 
