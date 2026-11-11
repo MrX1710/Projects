@@ -57,8 +57,6 @@ Random Forest PR-AUC: **0.788**.
 - **Decision Tree:** `max_depth=5`, `min_samples_split=20`, `min_samples_leaf=10`, `max_features=5`
 - **Random Forest:** 250 trees, `max_depth=15`, `min_samples_split=20`, `min_samples_leaf=15`, `max_features=5`
 - **CatBoost:** 1000 iterations, `learning_rate=0.05`, `depth=6`, Logloss
-- **Ensemble:** soft voting, weights `[2, 1]` (CatBoost, Random Forest)
-
 ## Known limitations
 
 - The ensemble was used to generate a submission but was never scored on the validation set, so there is no evidence it beats CatBoost alone.
@@ -69,15 +67,6 @@ Random Forest PR-AUC: **0.788**.
 - The notebook outputs for the decision tree show `max_depth=15` while the code says `5`, so the saved output is from an older run.
 - The country and education grouping dictionaries were generated with AI assistance.
 - Imports for `LabelEncoder`, `OneHotEncoder`, `RobustScaler`, `Pipeline` are unused.
-
-## Possible next steps
-
-- Evaluate the ensemble on the validation set.
-- Tune CatBoost and Random Forest with cross-validation.
-- Tune the decision threshold using the precision-recall curve.
-- Try log-transforming `capital-gain` and `capital-loss`.
-- Move scaling and encoding into a `Pipeline` so there is no leakage.
-- Add feature importance plots.
 
 ## How to run
 
