@@ -47,7 +47,6 @@ The classes are imbalanced: in the validation split, about 76% of people are `<=
 | Decision Tree | 0.84 | 0.78 | 0.47 | 0.59 |
 | Random Forest | 0.86 | 0.79 | 0.56 | 0.65 |
 | **CatBoost** | **0.87** | 0.79 | **0.65** | **0.71** |
-| Ensemble (CatBoost x2 + RF x1) | not evaluated | - | - | - |
 
 Random Forest PR-AUC: **0.788**.
 
