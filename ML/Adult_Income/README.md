@@ -57,6 +57,7 @@ Random Forest PR-AUC: **0.788**.
 - **Decision Tree:** `max_depth=5`, `min_samples_split=20`, `min_samples_leaf=10`, `max_features=5`
 - **Random Forest:** 250 trees, `max_depth=15`, `min_samples_split=20`, `min_samples_leaf=15`, `max_features=5`
 - **CatBoost:** 1000 iterations, `learning_rate=0.05`, `depth=6`, Logloss
+
 ## Known limitations
 
 - The ensemble was used to generate a submission but was never scored on the validation set, so there is no evidence it beats CatBoost alone.
