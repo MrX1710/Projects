@@ -2,3 +2,5 @@
 venv/
 .env/
 Sales.parquet
+__pycache__/
+*.pyc
