@@ -4,3 +4,4 @@ venv/
 Sales.parquet
 __pycache__/
 *.pyc
+Data/
